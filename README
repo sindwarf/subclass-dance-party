@@ -1,0 +1,55 @@
+Methods to Implement:
+  When you click a static dancer they turn into random movement dancers
+
+Line up-------
+  1. grab all dancers with dancer class
+  2. put all dancer html elements into array (might be jQ object?)
+  3. split array in 2 (x: 10%, x: 90%)
+  4. get available y range (10%-90%), divide this range by # of dancers. This becomes our increment value when traversing arrays(step3) and positioning each dancer
+  5. Set position of each dancer in array1 (step3) and array2, with respective X values
+  6. Do css animation when re-positioning each dancer
+
+Random Movement Dancer-----
+  1. Make a new constructor class for randomly moving dancer
+    a. Make a new random movement method that starts the random movement; ititiate itself inside constructor, call itself inside the setTimeoutCallback
+    b. Make a method that handles movement and color change when hits edge of screen
+    c.
+  2. Make a new button that creates a RandMoveDancer
+  3. New CSS Class
+    a. Will need to handle colors, animations, size & shape
+
+Circle Dancers----
+  1. Make a new constructor class for a dancer with two shapes revolving around each other
+  2. Make a a new button that creates Circle Dancers
+  3. New CSS class
+
+
+
+  Tools to use:
+  - $(select the dancer).css('property', 'value')
+  - animation of CSS positions (below)
+
+Types of dancers:
+  1. Dancer that moves away from your cursor
+  2. Get cursor position
+  3. Check all the dancer's positions every step
+  4. if the dancer is within x amount of pixels, move the opposite direction
+  5.
+
+
+/* The animation code
+
+var randomDirectionX = Math.random()*smallNum
+var randomdirectionY = Math.random()*smallNum
+
+animation-duration = 5s;
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
+
+
+https://www.w3schools.com/css/css3_animations.asp
